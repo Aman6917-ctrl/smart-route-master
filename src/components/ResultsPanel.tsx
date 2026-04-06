@@ -58,7 +58,7 @@ const ResultsPanel = ({ results }: ResultsPanelProps) => {
               <div className="flex items-center gap-3">
                 <div
                   className="w-3 h-3 rounded-full ring-4 ring-offset-2 ring-offset-card"
-                  style={{ backgroundColor: r.color, ringColor: `${r.color}30`, boxShadow: `0 0 15px ${r.color}40` }}
+                  style={{ backgroundColor: r.color, boxShadow: `0 0 15px ${r.color}40, 0 0 0 4px ${r.color}20` }}
                 />
                 <h4 className="font-bold text-foreground font-display">{r.algorithm}</h4>
               </div>
