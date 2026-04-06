@@ -15,7 +15,6 @@ export default {
     extend: {
       fontFamily: {
         sans: ["Inter", "system-ui", "sans-serif"],
-        display: ["Space Grotesk", "Inter", "system-ui", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       colors: {
@@ -89,33 +88,9 @@ export default {
           "0%": { transform: "translate(0, 0)" },
           "100%": { transform: "translate(60px, 60px)" },
         },
-        float: {
+        "float": {
           "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-12px)" },
-        },
-        "float-slow": {
-          "0%, 100%": { transform: "translateY(0) rotate(0deg)" },
-          "50%": { transform: "translateY(-20px) rotate(2deg)" },
-        },
-        shimmer: {
-          "0%": { backgroundPosition: "-200% 0" },
-          "100%": { backgroundPosition: "200% 0" },
-        },
-        "orbit": {
-          "0%": { transform: "rotate(0deg) translateX(120px) rotate(0deg)" },
-          "100%": { transform: "rotate(360deg) translateX(120px) rotate(-360deg)" },
-        },
-        "orbit-reverse": {
-          "0%": { transform: "rotate(0deg) translateX(80px) rotate(0deg)" },
-          "100%": { transform: "rotate(-360deg) translateX(80px) rotate(360deg)" },
-        },
-        "gradient-shift": {
-          "0%, 100%": { backgroundPosition: "0% 50%" },
-          "50%": { backgroundPosition: "100% 50%" },
-        },
-        "border-glow": {
-          "0%, 100%": { borderColor: "hsl(168 80% 48% / 0.2)" },
-          "50%": { borderColor: "hsl(168 80% 48% / 0.6)" },
+          "50%": { transform: "translateY(-10px)" },
         },
       },
       animation: {
@@ -124,13 +99,7 @@ export default {
         "fade-in": "fade-in 0.5s ease-out forwards",
         "pulse-glow": "pulse-glow 3s ease-in-out infinite",
         "grid-move": "grid-move 8s linear infinite",
-        float: "float 6s ease-in-out infinite",
-        "float-slow": "float-slow 8s ease-in-out infinite",
-        shimmer: "shimmer 3s ease-in-out infinite",
-        orbit: "orbit 20s linear infinite",
-        "orbit-reverse": "orbit-reverse 15s linear infinite",
-        "gradient-shift": "gradient-shift 6s ease-in-out infinite",
-        "border-glow": "border-glow 3s ease-in-out infinite",
+        "float": "float 6s ease-in-out infinite",
       },
     },
   },
